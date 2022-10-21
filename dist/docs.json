@@ -1,0 +1,213 @@
+{
+  "api": {
+    "name": "CapacitorHealthkitPlugin",
+    "slug": "capacitorhealthkitplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "requestAuthorization",
+        "signature": "(authOptions: AuthorizationQueryOptions) => Promise<void>",
+        "parameters": [
+          {
+            "name": "authOptions",
+            "docs": "",
+            "type": "AuthorizationQueryOptions"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "AuthorizationQueryOptions"
+        ],
+        "slug": "requestauthorization"
+      },
+      {
+        "name": "queryHKitSampleType",
+        "signature": "<T>(queryOptions: SingleQueryOptions) => Promise<QueryOutput<T>>",
+        "parameters": [
+          {
+            "name": "queryOptions",
+            "docs": "",
+            "type": "SingleQueryOptions"
+          }
+        ],
+        "returns": "Promise<QueryOutput<T>>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "QueryOutput",
+          "T",
+          "SingleQueryOptions"
+        ],
+        "slug": "queryhkitsampletype"
+      },
+      {
+        "name": "isAvailable",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "isavailable"
+      },
+      {
+        "name": "multipleQueryHKitSampleType",
+        "signature": "(queryOptions: MultipleQueryOptions) => Promise<any>",
+        "parameters": [
+          {
+            "name": "queryOptions",
+            "docs": "",
+            "type": "MultipleQueryOptions"
+          }
+        ],
+        "returns": "Promise<any>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "MultipleQueryOptions"
+        ],
+        "slug": "multiplequeryhkitsampletype"
+      },
+      {
+        "name": "isEditionAuthorized",
+        "signature": "(queryOptions: EditionQuery) => Promise<void>",
+        "parameters": [
+          {
+            "name": "queryOptions",
+            "docs": "",
+            "type": "EditionQuery"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "EditionQuery"
+        ],
+        "slug": "iseditionauthorized"
+      },
+      {
+        "name": "multipleIsEditionAuthorized",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "multipleiseditionauthorized"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "AuthorizationQueryOptions",
+      "slug": "authorizationqueryoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "read",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string[]"
+        },
+        {
+          "name": "write",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string[]"
+        },
+        {
+          "name": "all",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string[]"
+        }
+      ]
+    },
+    {
+      "name": "QueryOutput",
+      "slug": "queryoutput",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "countReturn",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "resultData",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "T"
+          ],
+          "type": "T[]"
+        }
+      ]
+    },
+    {
+      "name": "SingleQueryOptions",
+      "slug": "singlequeryoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "sampleName",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "MultipleQueryOptions",
+      "slug": "multiplequeryoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "sampleNames",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string[]"
+        }
+      ]
+    },
+    {
+      "name": "EditionQuery",
+      "slug": "editionquery",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "sampleName",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
